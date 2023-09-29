@@ -1,5 +1,7 @@
-{
-  /* <li class="gallery-item">
-  <img src="" alt="" />
-</li>; */
+export function ImageGalleryItem({ smallImage, tag, onClick }) {
+  return (
+    <li onClick={() => onClick(smallImage, tag)}>
+      <img src="smallImage" alt="tag" />
+    </li>
+  );
 }
