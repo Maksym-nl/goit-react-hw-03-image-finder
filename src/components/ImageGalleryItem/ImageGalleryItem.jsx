@@ -1,7 +1,7 @@
-export function ImageGalleryItem({ smallImage, tag, onClick }) {
+export function ImageGalleryItem({ smallImage, largeImage, tag, onClick }) {
   return (
-    <li onClick={() => onClick(smallImage, tag)}>
-      <img src="smallImage" alt="tag" />
+    <li onClick={() => onClick({ largeImage, tag })}>
+      <img src={smallImage} alt={tag} />
     </li>
   );
 }

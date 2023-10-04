@@ -1,6 +1,6 @@
 import { Component } from 'react';
-
 import { toast } from 'react-toastify';
+import { Header } from './Searchbar.styled';
 export default class SearchBar extends Component {
   state = {
     input: '',
@@ -22,7 +22,7 @@ export default class SearchBar extends Component {
 
   render() {
     return (
-      <header>
+      <Header>
         <form type="submit" onSubmit={this.handleSubmit}>
           <button>
             <span>Search</span>
@@ -37,7 +37,7 @@ export default class SearchBar extends Component {
             value={this.state.input}
           />
         </form>
-      </header>
+      </Header>
     );
   }
 }
